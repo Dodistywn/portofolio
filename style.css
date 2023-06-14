@@ -12,7 +12,7 @@
     --sideBGColor: #040b14;
     --themeColor: #00A78E;
     --iconBGColor: #2C2F3F;
-    --textColor: #525252;
+    --textColor: #353535;
     --bgColor: #F7F7F7;
 }
 
@@ -243,11 +243,11 @@ main{
     background-color: var(--themeColor);
     border-radius: 3px;
 }
-#about .divider ~ p{
+.sub-para{
     color: var(--textColor);
     font-size: 15px;
     letter-spacing: 0.4px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 15px;
 }
 #about .about-col{
@@ -345,5 +345,51 @@ main{
 @media only screen and (max-width: 400px){
     #about .about-col .img.col img{
         width: 90%;
+    }
+}
+
+
+/* Skill */
+#skill{
+    padding: 70px 30px;
+}
+#skill .skill-row{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+#skill .skill-row .skill-box .skill-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+#skill .skill-row .skill-box .skill-info h2{
+    color: var(--sideBGColor);
+    font-weight: 600;
+    font-size: 15px;
+    font-style: italic;
+}
+#skill .skill-row .skill-box .skill-outter-line{
+    width: 100%;
+    height: 10px;
+    background-color: lightgrey;
+    border-radius: 15px;
+}
+#skill .skill-row .skill-box .skill-outter-line .skill-inner-line{
+    height: 10px;
+    background-color: var(--themeColor);
+    border-radius: 20px;
+}
+
+/* Responsive Skill */
+@media only screen and (max-width: 450px){
+    #skill{
+        padding: 50px 15px;
+    }
+    #skill .skill-row{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
     }
 }
