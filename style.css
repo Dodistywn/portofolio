@@ -107,6 +107,7 @@ header .footer{
 }
 header .footer p a{
     color: var(--themeColor);
+    text-decoration: none;
 }
 
 /* Mobile Nav */
@@ -303,7 +304,7 @@ main{
 }
 
 /* responsive about */
-@media only screen and (max-width: 830px){
+@media only screen and (max-width: 800px){
     #about{
         padding: 50px 10px;
     }
@@ -471,25 +472,25 @@ main{
         padding: 50px 10px;
     }
     #port .port-row{
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 15px;
-    }
-}
-@media only screen and (max-width: 650px) {
-    #port{
-        padding: 50px 10px;
-    }
-    #port .port-row{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px;
     }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 600px) {
+    #port{
+        padding: 50px 10px;
+    }
     #port .port-row{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 15px;
     }
 }
+/* @media only screen and (max-width: 350px) {
+    #port .port-row{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+} */
 
 
 /* Services */
