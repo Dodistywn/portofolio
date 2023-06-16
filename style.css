@@ -11,7 +11,7 @@
 
 :root{
     --sideBGColor: #040b14;
-    --themeColor: #0abab5;
+    --themeColor: #02a5dc;
     --iconBGColor: #2C2F3F;
     --textColor: #353535;
     --bgColor: #F7F7F7;
@@ -39,7 +39,8 @@ header .profile{
 header .profile img{
     width: 150px;
     border-radius: 50%;
-    border: 10px solid var(--iconBGColor);
+    border: 10px solid white;
+    background-color: white;
 }
 header .profile h1{
     color: white;
@@ -195,9 +196,6 @@ main{
     letter-spacing: -1px;
     margin-bottom: 10px;
     line-height: 70px;
-}
-#home .home-row h1 span{
-    color: var(--themeColor);
 }
 #home .home-row p{
     color: whitesmoke;
