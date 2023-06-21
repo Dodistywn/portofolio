@@ -494,7 +494,7 @@ main{
 /* Services */
 #service{
     padding: 70px 30px;
-    background-color: white;
+    background-color: var(--bgColor);
 }
 #service .service-row{
     margin-top: 50px;
